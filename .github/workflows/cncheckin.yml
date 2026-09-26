@@ -1,7 +1,7 @@
 name: 米游签定时签到
 on:
   schedule:
-    - cron: "50 0 * * *"
+    - cron: "30 2 * * *"
   workflow_dispatch:
     inputs:
       mode:
