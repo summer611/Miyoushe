@@ -1,5 +1,7 @@
 name: 米游签定时签到
 on:
+  schedule:
+    - cron: "50 0 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -15,9 +17,6 @@ on:
         description: "指定账号名，留空跑全部"
         required: false
         type: string
-  schedule:
-    - cron: "50 0 * * *"
-
 
 permissions:
   contents: read
